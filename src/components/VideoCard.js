@@ -1,7 +1,7 @@
 import React from "react";
 
 const VideoCard = ({ video }) => {
-  console.log("video", video);
+  // console.log("video", video);
 
   return (
     <div className="shadow-lg p-2 m-2 w-72">

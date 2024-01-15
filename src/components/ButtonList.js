@@ -10,17 +10,14 @@ const list = [
   "Movies",
   "Mix",
   "Shorts",
-  "Computer",
-  "Namste",
-  "Whatsapp",
-  "Insta",
+  "demo",
 ];
 
 const ButtonList = () => {
   return (
     <div className="flex flex-wrap">
       {list.map((item, key) => (
-        <Button name={item} />
+        <Button name={item} key={key} />
       ))}
 
       {/* <Button name="MUSIC" />

@@ -7,6 +7,15 @@ import store from "./components/utils/store";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainContainer from "./components/MainContainer";
 import WatchPage from "./components/WatchPage";
+import Demo from "./components/Demo";
+import { FaMusic } from "react-icons/fa";
+import Movie from "./components/Movie";
+import Video from "./components/Video";
+import Music from "./components/Music";
+import All from "./All";
+import Cricate from "./components/Cricate";
+import Live from "./components/Live";
+// import Live from "./components/Live";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -21,6 +30,34 @@ function App() {
         {
           path: "watch",
           element: <WatchPage />,
+        },
+        {
+          path: "demo",
+          element: <Demo />,
+        },
+        {
+          path: "all",
+          element: <All />,
+        },
+        {
+          path: "music",
+          element: <Music />,
+        },
+        {
+          path: "video",
+          element: <Video />,
+        },
+        {
+          path: "Live",
+          element: <Live />,
+        },
+        {
+          path: "Cricate",
+          element: <Cricate />,
+        },
+        {
+          path: "movies",
+          element: <Movie />,
         },
       ],
     },
