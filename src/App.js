@@ -15,6 +15,7 @@ import Music from "./components/Music";
 import All from "./All";
 import Cricate from "./components/Cricate";
 import Live from "./components/Live";
+import Demo2 from "./components/Demo2";
 // import Live from "./components/Live";
 
 function App() {
@@ -33,7 +34,12 @@ function App() {
         },
         {
           path: "demo",
-          element: <Demo />,
+          element: (
+            <>
+              <Demo />
+              <Demo2 />
+            </>
+          ),
         },
         {
           path: "all",
