@@ -73,6 +73,11 @@ const Cricate = () => {
 
   // every
 
+  const person3 = [1, 2, 3, 4, 5, 6];
+  const Sum = (element) => element < 6;
+
+  console.log(person3.every(Sum));
+
   return (
     <div>
       <h1>Array of sum={sum}</h1>
