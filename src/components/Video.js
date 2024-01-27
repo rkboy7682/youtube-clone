@@ -1,12 +1,49 @@
 import React from "react";
 
 const Video = () => {
-  // const o1 = { a: 1, b: 1, c: 1 };
-  // const o2 = { b: 2, c: 3, d: 4 };
-  // console.log(Object.assign(o1, o2));
+  // At
+  const sentence = "The quick brown fox jumps over the lazy dog";
+  const sentence1 = "hi this is rahul yadav.";
+  console.log("At :", sentence.at(4));
 
+  // .charAt
+  console.log("CharAt :", sentence.charAt(5));
+
+  // charCodeAt
+  console.log("CharCodeAt:", sentence.charCodeAt(6));
+
+  // codePointAt
+  console.log("codePointAt:", sentence.codePointAt(8));
+
+  //concat
+  console.log("concat:", sentence.concat(sentence1));
+
+  //endWith
+  console.log("endWith:", sentence.endsWith("dog", 2));
+
+  //fromCharCode
+
+  console.log("fromcharCode:", String.fromCharCode(189, 43));
+
+  // fromCodePoint
+
+  console.log("fromCodePoint:", String.fromCodePoint(9731, 9733));
+
+  // includes
+  console.log("includes:", sentence.includes("dog"));
+
+  // search
+  const str = "hey JudE /";
+  console.log(str.search("J"));
+
+  const Input = { a: 1, b: 2, c: 3 };
+  const Input01 = { b: 2, c: 3, d: 4 };
+  for (let [key, value] of Object.entries(Input)) {
+    console.log(key, value);
+  }
   return <div>Video</div>;
 };
+
 export default Video;
 
 /*  Object Intersection:
