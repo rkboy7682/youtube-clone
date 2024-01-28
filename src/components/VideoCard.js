@@ -3,6 +3,9 @@ import UserContex from "./utils/UserContex";
 
 const VideoCard = ({ video }) => {
   // console.log("video", video);
+  const user = useContext(UserContex);
+  console.log("User", user.UserContex._currentValue2);
+  const x = user.UserContex._currentValue2;
   return (
     <div className="shadow-lg p-2 m-2 w-72">
       <img
@@ -14,7 +17,8 @@ const VideoCard = ({ video }) => {
         <li className="font-semibold">{video?.snippet?.title}</li>
         <li>{video?.snippet?.channelTitle}</li>
         <li>{video?.statistics?.viewCount}</li>
-        {/* <li>{User.UserContex.Provider._context._currentValue}</li> */}
+        <li>{x.name} </li>
+        <li>{x.email}</li>
       </ul>
     </div>
   );

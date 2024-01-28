@@ -9,9 +9,7 @@ const MainContainer = () => {
   return (
     <div className=" w-11/12 my-2 mx-2 shadow-lg">
       <ButtonList />
-      <UserContex.Provider
-        value={{ user: user.UserContex.Provider._context._currentValue }}
-      >
+      <UserContex.Provider value={user}>
         <VideoContainer />
       </UserContex.Provider>
     </div>
