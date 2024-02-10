@@ -16,6 +16,8 @@ import All from "./All";
 import Cricate from "./components/Cricate";
 import Live from "./components/Live";
 import Demo2 from "./components/Demo2";
+import Short from "./components/Short";
+
 // import Live from "./components/Live";
 
 function App() {
@@ -24,6 +26,10 @@ function App() {
       path: "/",
       element: <Body />,
       children: [
+        {
+          path: "shorts",
+          element: <Short />,
+        },
         {
           path: "/",
           element: <MainContainer />,
