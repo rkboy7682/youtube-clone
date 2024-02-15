@@ -11,6 +11,9 @@ const list = [
   "Mix",
   "Shorts",
   "demo",
+  "Popular",
+  "Mix2",
+  "Child",
 ];
 
 const ButtonList = () => {

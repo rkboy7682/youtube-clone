@@ -60,10 +60,11 @@ const Movie = () => {
     })
     .join(" ");
 
-  const object1 = { a: 1, b: 2, c: 3 };
+  const object1 = { a: 100, b: 200, c: 300 };
   const object2 = { b: 2, c: 3, d: 4 };
 
   console.log("value", Object.values(object1));
+  console.log("keys", Object.keys(object1));
 
   function objectIntersection(obj1, obj2) {
     const result = {};

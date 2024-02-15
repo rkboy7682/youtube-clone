@@ -40,15 +40,22 @@ const Cricate = () => {
   const arrrrr = [2, 3, 4, 8, 6, 52, 9];
 
   for (const element of arrrrr.entries()) {
-    console.log(element);
+    console.log("entries", element); //return array
   }
 
   // Find Max number in array
 
-  const max = [8, 3, 11, 5, 2];
+  const max = [8, 3, 11, 521, 2];
 
   const max1 = max.reduce((a, b) => Math.max(a, b));
   console.log("maximum", max1);
+
+  // Find Min number in array
+
+  console.log(
+    "Minimum is:",
+    max.reduce((a, b) => Math.min(a, b))
+  );
 
   // for in
   const person = { firstName: "Rahul", lastName: "Yadav", age: 26 };
@@ -58,7 +65,7 @@ const Cricate = () => {
     value += person[x] + ",";
     // console.log("value", value);
   }
-  console.log(value);
+  console.log("value is:", value);
 
   // for of
   const person1 = ["firstName", "rahul", "yadav"];
@@ -150,7 +157,10 @@ const Cricate = () => {
     { name: "fish", quantity: 1 },
     { name: "cherries", quantity: 5 },
   ];
-  console.log(inventory.findLast((e) => e.quantity < 5));
+  console.log(
+    "last jo pahle mil gaya wahi de dega:",
+    inventory.findLast((e) => e.quantity < 5)
+  );
 
   // flat method
 
@@ -163,7 +173,7 @@ const Cricate = () => {
   person9.flatMap((e) => {
     p1.push(e);
   });
-  console.log(p1);
+  console.log("P1", p1);
 
   // remove negative and split odd number by 1
 
@@ -176,7 +186,7 @@ const Cricate = () => {
   // for each
 
   const person10 = [5, 4, 20, 17, 18];
-  person10.forEach((e) => console.log(e));
+  person10.forEach((e) => console.log("for each:", e));
 
   // from
   const person11 = [5, 4, 20, 17, 18];
@@ -209,7 +219,7 @@ const Cricate = () => {
   const person16 = [5, 4, 20, , 18, 17];
   const rahul = person16.keys();
   for (let x of rahul) {
-    console.log("rfg", x);
+    console.log("key", x);
   }
 
   //lastindexof
@@ -271,7 +281,7 @@ const Cricate = () => {
   console.log("SHIFT VALUE", person23.shift());
   const person24 = [8, 9, 4, 5, 6, 2, 3];
 
-  console.log("slice", person24.slice());
+  console.log("slice", person24.slice(1));
 
   //some
   const person25 = [8, 9, 4, 5, 6, 2, 3];
@@ -282,7 +292,7 @@ const Cricate = () => {
   console.log(
     "sort",
     person26.sort((a, b) => {
-      debugger;
+      // debugger;
       return a - b;
     })
   );

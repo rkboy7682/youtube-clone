@@ -3,7 +3,7 @@ import React from "react";
 const Video = () => {
   // At
   const sentence = "The quick brown fox jumps over the lazy dog";
-  const sentence1 = "hi this is rahul yadav.";
+  const sentence1 = "    . hi        this is rahul yadav.    ,   ";
   console.log("At :", sentence.at(4));
 
   // .charAt
@@ -16,10 +16,10 @@ const Video = () => {
   console.log("codePointAt:", sentence.codePointAt(8));
 
   //concat
-  console.log("concat:", sentence.concat(sentence1));
+  console.log("concat:", sentence.concat("," + sentence1));
 
   //endWith
-  console.log("endWith:", sentence.endsWith("dog", 2));
+  console.log("endWith:", sentence.endsWith("dog", 46));
 
   //fromCharCode
 
@@ -36,6 +36,20 @@ const Video = () => {
   const str = "hey JudE /";
   console.log(str.search("J"));
 
+  // slice
+
+  console.log("slice", sentence.slice(4, 9));
+  // split
+
+  console.log("split", sentence.split(" ", 10));
+
+  // Substring
+  console.log("sub strinf:", sentence.substring(4, 46));
+
+  //trime
+  console.log("trime:", sentence1.trim());
+
+  // valueof
   const Input = { a: 1, b: 2, c: 3 };
   const Input01 = { b: 2, c: 3, d: 4 };
   for (let [key, value] of Object.entries(Input)) {

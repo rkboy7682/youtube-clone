@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "./utils/appSlice";
 import { SearchApi } from "./utils/constant";
 import { cacheResult } from "./utils/searchSlice";
+import { Link } from "react-router-dom";
 
 const Head = () => {
   const dispatch = useDispatch();
@@ -52,6 +53,7 @@ const Head = () => {
           alt="menu"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
         />
+
         <img
           className="h-16 mx-8"
           alt="YouTubeLogo"

@@ -8,7 +8,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainContainer from "./components/MainContainer";
 import WatchPage from "./components/WatchPage";
 import Demo from "./components/Demo";
-import { FaMusic } from "react-icons/fa";
+// import { FaMusic } from "react-icons/fa";
 import Movie from "./components/Movie";
 import Video from "./components/Video";
 import Music from "./components/Music";
@@ -17,6 +17,10 @@ import Cricate from "./components/Cricate";
 import Live from "./components/Live";
 import Demo2 from "./components/Demo2";
 import Short from "./components/Short";
+import Mix from "./components/Mix";
+import Popular from "./components/Popular";
+import Child from "./components/Child";
+import Mix2 from "./components/Mix2";
 
 // import Live from "./components/Live";
 
@@ -70,6 +74,18 @@ function App() {
         {
           path: "movies",
           element: <Movie />,
+        },
+        {
+          path: "mix",
+          element: <Mix />,
+        },
+        {
+          path: "mix2",
+          element: <Mix2 />,
+        },
+        {
+          path: "child",
+          element: <Child />,
         },
       ],
     },

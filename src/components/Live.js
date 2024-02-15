@@ -13,7 +13,7 @@ const Live = () => {
       <div
         className="border-4 border-red-500 w-80 h-80  m-2 p-2 "
         onClick={(e) => {
-          e.stopPropagation();
+          // e.stopPropagation();
 
           alert("hello parent");
         }}
@@ -22,7 +22,7 @@ const Live = () => {
         <div
           className="border-4 border-green-500 w-60 h-60 m-2 p-2"
           onClick={(e) => {
-            e.stopPropagation();
+            // e.stopPropagation();
 
             alert("hello child");
           }}
