@@ -53,12 +53,13 @@ const Head = () => {
           alt="menu"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
         />
-
-        <img
-          className="h-16 mx-8"
-          alt="YouTubeLogo"
-          src="https://t3.ftcdn.net/jpg/03/00/38/90/360_F_300389025_b5hgHpjDprTySl8loTqJRMipySb1rO0I.jpg"
-        />
+        <a href="/">
+          <img
+            className="h-16 mx-8"
+            alt="YouTubeLogo"
+            src="https://t3.ftcdn.net/jpg/03/00/38/90/360_F_300389025_b5hgHpjDprTySl8loTqJRMipySb1rO0I.jpg"
+          />
+        </a>
       </div>
 
       <div className="col-span-10 m-4">
