@@ -98,7 +98,7 @@ const Cricate = () => {
 
   // filter method prime number
 
-  const prime = [2, 3, 4, 5, 6, 7, 8, 9];
+  const prime = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
   const p = [];
   prime.filter((e) => {
     if (e % 2 === 0 && e > 2) {
