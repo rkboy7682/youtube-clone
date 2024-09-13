@@ -18,7 +18,6 @@ import Live from "./components/Live";
 import Demo2 from "./components/Demo2";
 import Short from "./components/Short";
 import Mix from "./components/Mix";
-import Popular from "./components/Popular";
 import Child from "./components/Child";
 import Mix2 from "./components/Mix2";
 
